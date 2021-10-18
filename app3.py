@@ -5,10 +5,10 @@ import functools
 import random
 
 # Colors for styling
-LIGHT_GRAY = "#949494"
-BLACK = "#262626"
-YELLOW = "#fff45e"
-YELLOW2 = "#ebdd1c"
+LIGHT_GRAY = "#888"
+BLACK = "#363636"
+YELLOW = "#ffd900"
+YELLOW2 = "#ffe866"
 WHITE = "#e3e3e3"
 DARK_GRAY = "#545454"
 
@@ -389,7 +389,7 @@ class Calculator(tk.Tk):
                    style="Button.TButton",
                    command=lambda: self.on_button_clicked("0")
                    ).grid(row=4, column=0,
-                                                                                                  columnspan=2)
+                          columnspan=2)
         ttk.Button(self.button_container,
                    text=",",
                    style="Button.TButton",
@@ -551,7 +551,7 @@ class Calculator(tk.Tk):
                       ("active", WHITE)],
                   background=[
                       ("pressed", "!focus", LIGHT_GRAY),
-                      ("active", "gray")],
+                      ("active", "#999")],
                   relief=[("pressed", "groove"),
                           ("!pressed", "ridge")])
 
